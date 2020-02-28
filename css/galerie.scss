@@ -1,0 +1,268 @@
+$button : rgb(99, 98, 98);
+$color : rgb(26, 41, 40);
+@mixin flex($backgroundcolor,$direction){
+    display: flex;
+    width: 100%;
+    background-color: $backgroundcolor;
+    flex-direction :$direction;
+}
+@mixin button{
+    background-color: $button;
+    padding: 5px 12px;  
+    border-radius: 25px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.mySlides {display:none;}
+
+.nav1{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0%;
+    z-index: 3;
+    div{
+        margin-left: 20%;
+        display: flex;
+        margin-top: -60px;
+        
+
+        a{
+        margin-right: 5%;
+         margin-top: 10px;
+                }
+    }
+    img{
+        width: 100px;
+        height: 80px;
+        margin-right: 16%;
+        margin-left: 10px;
+    }
+  
+} 
+a{
+    text-decoration: none;
+    color: white; 
+}
+.reservationnav{
+ @include button;
+}
+.nav2{
+    display: none;
+    background-color: black;
+    width: 100%;
+    margin-top: -30px;
+    position: fixed;
+}
+
+.iconmenu img{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.container{
+ @include flex(black,column);
+ display: none;
+ position: fixed;
+ z-index: 3;
+ margin-top: 32px;
+    }
+.box2{
+    height: 30px;
+    // text-align: center;
+    margin-left: 25%;
+}
+
+.menuiserie{
+    @include flex(white,row);
+    img{
+        padding: 2px;
+        background-color: $button;
+        width: 15px;
+        height: 15px;
+    }
+}
+.p111{
+    border-bottom: 1px solid $color;
+    width: 10px;
+    margin-left: 85%;
+    color: $color;
+
+}
+.p11 {
+    position: relative;
+    top: -35px;
+    left: 88%;
+    img{
+  margin-left: 2%;
+   width: 12px;
+   height: 12px;
+}}
+@for $i from 1 through 6 {
+    .section#{$i} { 
+    @include flex(white,row);
+    width: 90%;
+    overflow-x: auto;
+    margin-left: 50px;
+    height: 8.6cm;
+    &::-webkit-scrollbar {
+        width: 0px;
+      }
+    div{
+        width: 300px;
+        height: 300px;
+        margin-right:3%;
+        div{
+    width: 250px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background: url("../images/m#{$i}.jpg")center center/cover no-repeat;
+    border: 1px gray solid;
+        }
+    }
+
+}
+
+}
+.search{
+    float: right;
+    input{
+        padding: 5px; 
+        position: relative;
+        top: 0px;
+        
+    }
+    img{
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        background-color: $button;
+        position: relative;
+        top: 11px;
+        left: -4px;
+    }
+}
+.titremenuiserie{
+    img{
+        width: 15px;
+        height: 15px;
+        top: 11px;
+    }
+    h1{
+        margin-left: 3%;
+        color: $color;
+    }
+}
+.menimg{
+    margin-left: 86%;
+    margin-bottom: 5px;
+}
+.reservation2{
+    @include button;
+    margin-top: 90px;
+    margin-left: 70px;
+    border: none;
+    display: none;
+}
+footer{
+    // margin-top: 50px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 250px;
+}
+.logo3 img{
+    width: 200px;
+    margin-left: 15%;
+}
+.links{
+    @include flex(black,row);
+}
+.links1{
+    margin-left: 2%;
+}
+.links2,.links1{
+    flex-basis: 25%;
+}
+.email {
+    flex-basis: 50%;
+    input{
+    padding: 5px 100px 5px 5px;
+}
+button{
+    @include button;
+    border: none;
+    border-radius:  0px 25px 25px 0px;
+    padding: 7px;
+    margin-left: -4px;
+}}
+.copyright {
+flex-basis: 75%; 
+p{
+    text-align: center;
+}
+}
+.f2{
+    @include flex(black,row);
+}
+.rs{
+    flex-basis: 25%;
+    
+ img{
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+    }
+}
+.blank{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+@media(max-width: 766px){
+    .logo3 img{
+        margin-left: 20%;
+    }
+    .nav1{
+        display: none;
+    }
+    .nav2{
+        display: block;
+    }
+    .insform{
+        margin-left: 5%;
+        // margin-top: 50px;
+        height: 550px;
+        justify-content: center;
+        //text-align: center;
+        width: 90%;
+    }
+    .input{
+        padding-right: 29%;
+        margin-left: 10%;
+    }
+    .links{
+        @include flex(black,column);
+        text-align: center;
+    }
+    .f2{
+        @include flex(black,column);
+        text-align: center;
+       
+    }
+    .copyright{
+        margin-left: -50px;
+    }
+}
+.park{
+    width: 100%;
+    height: 80px;
+}

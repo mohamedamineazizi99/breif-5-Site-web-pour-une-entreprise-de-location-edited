@@ -1,0 +1,325 @@
+body {
+  background-image: url(../images/DSC_0029.jpg);
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+.reservationnav {
+  background-color: #636262;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+
+.nav2 {
+  display: none;
+  background-color: black;
+  width: 100%;
+  margin-top: -30px;
+  position: fixed;
+}
+
+.logo img {
+  width: 150px;
+  margin-left: 35%;
+  margin-top: -40px;
+}
+
+.iconmenu img {
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  position: fixed;
+  margin-top: 32px;
+}
+
+.box2 {
+  height: 30px;
+  text-align: center;
+}
+
+.insform, .resform {
+  margin-left: 25%;
+  margin-top: 60px;
+  height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 50%;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.insform h1, .resform h1 {
+  padding-top: 20px;
+  color: #1a2928;
+  margin-bottom: 20px;
+}
+
+.resform {
+  height: 590px;
+}
+
+.resform select {
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid gray;
+  height: 30px;
+  width: 100px;
+  margin-right: 5%;
+}
+
+.s1 {
+  margin-left: 12%;
+}
+
+.margin {
+  height: 50px;
+}
+
+.input {
+  width: 40%;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  padding: 5px 5px 5px 10px;
+  display: block;
+  margin-left: 23%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.valider {
+  background-color: #636262;
+  padding: 5px 10px;
+  border-radius: 25px;
+  border: none;
+}
+
+.input1 {
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: none;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.inscrire {
+  background-color: #636262;
+  padding: 5px 10px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: bold;
+  width: 50%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 250px;
+}
+
+.logo3 img {
+  width: 200px;
+  margin-left: 35%;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.links1 {
+  margin-left: 2%;
+}
+
+.links2, .links1 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.email {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.email input {
+  padding: 5px 100px 5px 5px;
+}
+
+.email button {
+  background-color: #636262;
+  padding: 5px 10px;
+  border-radius: 25px;
+  border: none;
+  border-radius: 0px 25px 25px 0px;
+  padding: 7px;
+  margin-left: -4px;
+}
+
+.copyright {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.copyright p {
+  text-align: center;
+}
+
+.f2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.rs {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.rs img {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+}
+
+.blank {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+.nav1 {
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0%;
+  z-index: 3;
+}
+
+.nav1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+}
+
+.nav1 div a {
+  margin-right: 1%;
+  margin-top: 10px;
+}
+
+.nav1 img {
+  width: 100px;
+  height: 80px;
+  margin-right: 16%;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 766px) {
+  .logo3 img {
+    margin-left: 20%;
+  }
+  .nav1 {
+    display: none;
+  }
+  .nav2 {
+    display: block;
+  }
+  .insform, .resform {
+    margin-left: 5%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+  .input {
+    padding-right: 29%;
+    margin-left: 10%;
+  }
+  .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .f2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .copyright {
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 355px) {
+  .inscrire {
+    padding-right: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+  .resform {
+    height: 750px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
